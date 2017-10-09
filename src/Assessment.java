@@ -32,10 +32,4 @@ public class Assessment {
 
 
     }
-//        for (int i = 0; i < numbers.length; i++) {
-//            numberHolder = numberHolder + numbers.length;
-//        }
-//        double getAverage = numberHolder / numbers.length;
-//                return getAverage;
-//    }
 }
