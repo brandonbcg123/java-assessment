@@ -30,6 +30,5 @@ public class Assessment {
         int[] numbers = {6, 8, 9, 17};
         System.out.println(average(numbers));
 
-
     }
 }
