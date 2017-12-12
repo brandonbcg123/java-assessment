@@ -2,7 +2,12 @@ public class Person implements Greeter {
     protected String firstName;
     protected String lastName;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName)
+    {
+        if (this.firstName == null || this.lastName == null) {
+            throw new IllegalArgumentException("Both first name and last name should have a value");
+        }
+
         this.firstName = firstName;
         this.lastName = lastName;
     }

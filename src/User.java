@@ -6,11 +6,15 @@ public class User extends Person {
         this.isAdmin = isAdmin;
     }
 
-    public boolean isAdmin(boolean position) {
-        if (position == isAdmin) {
-            return true;
-        } else {
-            return false;
-        }
+    public boolean isAdmin() {
+        return this.isAdmin;
+    }
+
+
+    public static void main(String[] args) {
+        User tommy = new User("Brandon", "Gossen", true);
+        User otherUser = new User("Tomas", "Hipolito", false);
+        System.out.println(tommy.isAdmin());
+        System.out.println(otherUser.isAdmin());
     }
 }
